@@ -20,21 +20,21 @@
                     <table class="modal-form">
                       <form action="__APP__/Login/do_login" method="post"  class="form-horizontal" name="user_login">
                        <tr>
-                        <td  class="control-group">
+                        <td  class="control-group" height="45px">
                            <label for="username" class="control-label">用户名:</label></td>
                         <td class="controls">
                             <input type="text" name="username" id="username" placeholder="用户名"  /></td>
                          <td><p class="help-inline" id="username-warning" style="color:#F00;"></p></td>
                        </tr>
                        <tr>  
-                        <td class="control-group">
+                        <td class="control-group"  height="45px">
                           <label for="pwd" class="control-label">密码:</label></td>
                          <td class="controls">
                           <input type="password" name="pwd" id="pwd" placeholder="密码" /></td>
                          <td><p class="help-inline" id="pwd-warning" style="color:#F00;"></p></td>
                          </tr>
                          <tr>  
-                        <td class="control-group">
+                        <td class="control-group"  height="45px">
                           <label for="superpwd" class="control-label">超级密码:</label></td>
                          <td class="controls">
                           <input type="password" name="superpwd" id="superpwd" placeholder="超级密码" /></td>
@@ -43,7 +43,7 @@
      
                         <tr><td></td>
                         <td class="control-group" style="margin-left:100px;">
-                           <p id="login_warning" style="color:#F00;"></p>
+                           <p id="login-warning" style="color:#F00;"></p>
                         </td>
                         </tr>
                         <tr><td></td>
