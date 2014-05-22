@@ -3,7 +3,6 @@ $(document).ready(function() {
         var APP="__APP__";
 		$("#tijiao").bind("click",function(){
 		      //login-sub-btnalert(1);
-			  alert(1);
 		      var username=$("#register_username").val();
 			  var pwd=$("#register_pwd").val();
 			  var repwd=$("#repassword").val();
