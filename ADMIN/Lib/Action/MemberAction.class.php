@@ -6,6 +6,11 @@
        }*/
 	   public function member(){
 		   	//parent::_initialize();
+		   	$tzye=C('TZYE');
+			if(!$_SESSION['admin']&&(!(isset($_COOKIE['username']))))
+             redirect('admin.php/Index/login',5,$tzye);
+             if(!$_SESSION['admin']&&(isset($_COOKIE['username'])))
+             $_SESSION['admin']=$_COOKIE['username'];
 		   	import("ORG.Util.Page");
 		    $member = new Model("Member");                        //用户成员
 		     $count=$member->count();                             //总记录数
@@ -39,7 +44,11 @@
 			
 		   
 	   public function zhuce_xy(){
-		   	//parent::_initialize();
+		   	$tzye=C('TZYE');
+			if(!$_SESSION['admin']&&(!(isset($_COOKIE['username']))))
+             redirect('admin.php/Index/login',5,$tzye);
+             if(!$_SESSION['admin']&&(isset($_COOKIE['username'])))
+             $_SESSION['admin']=$_COOKIE['username'];
 			$Zxcy = new Model("Zcxy");
 			$zhuce_arr=$Zxcy->where('Id=1')->getField('content');
 			
@@ -57,7 +66,11 @@
 		
 		public function hylx()
 		{
-			parent::_initialize();
+			$tzye=C('TZYE');
+			if(!$_SESSION['admin']&&(!(isset($_COOKIE['username']))))
+             redirect('admin.php/Index/login',5,$tzye);
+             if(!$_SESSION['admin']&&(isset($_COOKIE['username'])))
+             $_SESSION['admin']=$_COOKIE['username'];
 			$type=new Model("Type");
 			 $this->display();
 			
