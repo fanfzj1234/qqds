@@ -1,5 +1,6 @@
 
 <link href="__CSS__/admin_member.css" rel="stylesheet" type="text/css" />
+<link href="__CSS__/style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="__JS__/jquery.js"></script>
 <script type="text/javascript" src="__JS__/admin_member.js"></script>
 <script>
@@ -15,7 +16,8 @@ $(document).ready(function()
 </head>
 <body style="background-color:#E0F0FE">
 
-<div class="admin_main_nr_dbox">
+<div class="tab-container">
+	<div class="tab_content">
  <div class="pagetit">
  <div class="ptit">个人用户管理</div>
   <div class="clear"></div>
@@ -33,7 +35,7 @@ $(document).ready(function()
      <td  align="center" width="5%" class="admin_list_tit" >操作</td>
     </tr>
   
-	<div id="content_left" class="span6">
+	<div id="content" class="span6">
      <foreach name="list" item="list">
        <tr>
           <td align="center" class="user_id">{$list.id}</td>
@@ -50,16 +52,13 @@ $(document).ready(function()
      </table>
     </div>  
       <div class="clear"></div>
-        <div id="container">
-         <div id="last_page" align="right">
-           <a id="prev">&larr;&larr; Last</a>
-         </div>
-         <div id="next_page" align="left">
-          <a  id="next">Next &rarr;&rarr;</a>
-         </div>
-          <div id="page_page" align="left">
-            <a><span id="page_id">1/<?php echo ($count/25);?><strong style="color: #000000"><?php echo "(共有".$count."条数据)";?></strong></span></a>
-            <input type="hidden" id="page_count" value="<?php echo ($count/25); ?>">
-           </div>
+        <div id="page">
+        	<div id="page_page">{$count}{$page.header}</div>
+        	<div id="prev_page">{$page.prev}</div>
+        	<div id="next_page">{$page.next}</div>
+        	<div id="first_page">{$page.first}</div>
+        	<div id="last_page">{$page.last}</div>
        </div>
   <div class="clear"></div>
+	</div>
+</div>

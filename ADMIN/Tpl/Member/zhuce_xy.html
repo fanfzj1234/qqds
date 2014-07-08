@@ -1,5 +1,9 @@
 <head>
 <link href="__CSS__/admin_member.css" rel="stylesheet" type="text/css" />
+<link rel='stylesheet' href='__CSS__/jquery-ui.css'>
+<link rel="stylesheet" href="__CSS__/style.css" media="screen" type="text/css" />
+
+<script src="__JS__/modernizr.js"></script>
 <script  type="text/javascript" src="__JS__/zhuce_xy.js"></script>
 </head>
 
@@ -7,7 +11,7 @@
 
 <div class="admin_main_nr_dbox">
  <div class="pagetit">
- <div class="ptit">注册协议</div>
+ <div class="ptit">注册协议  </div>
   <div class="clear"></div>
 </div> 
  <div class="clear"></div>
@@ -20,10 +24,12 @@
       <textarea rows="30" cols="50" id="user_info_fbzhuce_content" name="user_info_fbzhuce_content" placeholder="请在这里"> {$zhuce_arr} </textarea>
       </div>
   </div>
-  <div id="user_info_add_gl_warning" class="control-group"></div>
-  <div class="form-actions" id="sub_reset_gl_div">
-    <button class="btn btn-primary" type="button" id="zhuce_sub_btn">提交</button>
-    <button class="btn btn-primary" type="reset" id="zhuce_reset_btn">重置</button>
+  <div id="user_info_add_gl_warning" class="control-group">
+  	<p id="login-warning"></p>
+  </div>
+  <div style="text-align:center;clear:both">
+  	<input type="button" class="button" id="zhuce_sub_btn" value="提交"/>
+  	<input type="reset" class="button" id="zhuce_reset_btn" value="重置"/>
   </div>
   </form>   
 </div>
