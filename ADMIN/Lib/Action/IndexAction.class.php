@@ -11,7 +11,9 @@
              $_SESSION['admin']=$_COOKIE['username'];
              $this->display();
 		}
-		
+		public function admin_index(){
+			$this->display();
+		}
 		public function main(){
 			
 		           

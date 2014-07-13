@@ -4,13 +4,13 @@
              parent::_initialize();
 //必须写上这一句,否则子类将会复写父类的方法,这样父类的验证操作就失效了..
        }*/
-	   public function member(){
+	   public function index(){
 		   	//parent::_initialize();
-		   	$tzye=C('TZYE');
+		   	/*$tzye=C('TZYE');
 			if(!$_SESSION['admin']&&(!(isset($_COOKIE['username']))))
              redirect('admin.php/Index/login',5,$tzye);
              if(!$_SESSION['admin']&&(isset($_COOKIE['username'])))
-             $_SESSION['admin']=$_COOKIE['username'];
+             $_SESSION['admin']=$_COOKIE['username'];*/
 		   	import("ORG.Util.Page");
 		    $member = new Model("Member");                        //用户成员
 		     $count=$member->count();                             //总记录数
@@ -44,11 +44,11 @@
 			
 		   
 	   public function zhuce_xy(){
-		   	$tzye=C('TZYE');
+		   	/*$tzye=C('TZYE');
 			if(!$_SESSION['admin']&&(!(isset($_COOKIE['username']))))
              redirect('admin.php/Index/login',5,$tzye);
              if(!$_SESSION['admin']&&(isset($_COOKIE['username'])))
-             $_SESSION['admin']=$_COOKIE['username'];
+             $_SESSION['admin']=$_COOKIE['username'];*/
 			$Zxcy = new Model("Zcxy");
 			$zhuce_arr=$Zxcy->where('Id=1')->getField('content');
 			
@@ -66,11 +66,11 @@
 		
 		public function hylx()
 		{
-			$tzye=C('TZYE');
+			/*$tzye=C('TZYE');
 			if(!$_SESSION['admin']&&(!(isset($_COOKIE['username']))))
              redirect('admin.php/Index/login',5,$tzye);
              if(!$_SESSION['admin']&&(isset($_COOKIE['username'])))
-             $_SESSION['admin']=$_COOKIE['username'];
+             $_SESSION['admin']=$_COOKIE['username'];*/
 			$type=new Model("Type");
 			 $this->display();
 			

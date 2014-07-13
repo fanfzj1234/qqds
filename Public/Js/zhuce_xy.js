@@ -1,14 +1,15 @@
 
 $(document).ready(function() {
 	//alert("asdasdas");
+	//$("textarea#editor1").ckeditor();
 	$.extend({
 		initeditor:function(){
-			 CKEDITOR.replace( 'user_info_fbzhuce_content',{
+			 CKEDITOR.replace( 'editor01',{
 				   uiColor:'#2F4F4F',
 		          } );
 		},
 	getContent:function(){
-			 return CKEDITOR.instances.user_info_fbzhuce_content.getData();    //获取textarea的值  
+			 return CKEDITOR.instances.editor01.getData();    //获取textarea的值  
 		}	
 	});	
 	$.initeditor();
@@ -21,11 +22,11 @@ $(document).ready(function() {
 					 //alert("a长度："+a.length);
 				    if(a=='1'){
 						alert("发布成功");
-						$("#main").load(APP+'/Member/zhuce_xy');
+						window.location.href=APP+'/Member/index';
 						}
 				    else{
 						alert(data);
-						$("#main").load(APP+'/Member/zhuce_xy');
+						$("#larg").load(APP+'/Member/zhuce_xy');
 						//window.location.href=APP+'/Index/index';
 						}		
         });

@@ -6,6 +6,6 @@
 </head>
 
 <body>
-   <div style="margin-left:260px;margin-top:60px;"><img src="__IMG__/404_bg.jpg" alt=""></div>
+   <div style="margin-left:260px;margin-top:60px;"><img src="__IMG__/404.jpg" alt=""></div>
 </body>
 </html>

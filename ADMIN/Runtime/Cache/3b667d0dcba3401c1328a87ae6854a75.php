@@ -20,7 +20,7 @@
 <script src="__JS__/supersized.3.2.7.min.js"></script>
 <script src="__JS__/supersized-init.js"></script>
 <script src="__JS__/jquery-1.8.2.min.js"></script>
-
+<script src="__JS__/modernizr.js"></script>
 
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="__CSS__/reset.css">
@@ -28,12 +28,11 @@
 <link rel='stylesheet' href='__CSS__/jquery-ui.css'>
 <link rel='stylesheet prefetch' href='__CSS__/bootstrap.min.css'>
 <link rel="stylesheet" href="__CSS__/style.css" media="screen" type="text/css" />
-
-<script src="__JS__/modernizr.js"></script>
-
 <link rel="stylesheet" type="text/css" href="__CSS__/admin_login.css"/>
- <body class="login-page" >
- <div class="page-container">e
+
+
+<body class="login-page" >
+ <div class="page-container">
      <div id="logo">DZSW</div>
     <div class="login-form">
 
@@ -47,7 +46,7 @@
 						<div class="input-group-addon">
 							<i class="fa fa-user"></i>
 						</div>
-
+                       
 						<input type="text" class="form-control" name="username" id="username" placeholder="Username" autocomplete="off" />
 					</div>
 
@@ -86,7 +85,11 @@
                 <div class="form-group">
 				      <p id="login_warning" style="color:#F00;"></p>
                 </div>
-                
+                <div class="form-group">
+				      <p>齐齐哈尔大学电子商务协会——技术部制作</p>
+				      <p>©2014 DZSW CMS</p>
+				     
+                </div>
 					
 			</form>
           </div>	
@@ -94,8 +97,7 @@
 
 		</div>
 
-	</div>
-            
+	</div>           
     
 </body>
 </html>

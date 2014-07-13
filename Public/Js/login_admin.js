@@ -68,7 +68,7 @@ $(document).ready(function()
 						$("#login-warning").text("用户名或密码错误");
 						}
 					else if(a=='2'){
-						window.location.href=APP+'/Index/index';
+						window.location.href=APP+'/Index/admin_index';
 						}
 				    else{
 						//alert(a);
